@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #000000, #4b0082);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background: #111;
+            padding: 40px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(138, 43, 226, 0.6);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #bb86fc;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            color: #ccc;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            background: #222;
+            color: #fff;
+            border: 1px solid #333;
+        }
+
+        .input-group input:focus {
+            border-color: #bb86fc;
+            box-shadow: 0 0 5px #bb86fc;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: #6a0dad;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #8a2be2;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #aaa;
+        }
+
+        .footer-text a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" placeholder="Masukkan username">
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Masukkan password">
+            </div>
+
+            <button class="login-btn">Masuk</button>
+        </form>
+
+        <div class="footer-text">
+            Belum punya akun? <a href="#">Daftar</a>
+        </div>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0b0b0b, #2b003d);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            color: #bb86fc;
+            font-size: 36px;
+        }
+
+        header p {
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .profile img {
+            width: 260px;
+            border-radius: 18px;
+            box-shadow: 0 0 25px rgba(187, 134, 252, 0.6);
+        }
+
+        .card {
+            background: #141414;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.7);
+        }
+
+        .card h2 {
+            color: #bb86fc;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin-bottom: 8px;
+            color: #ddd;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 12px;
+            border-left: 3px solid #bb86fc;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #2f004f;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin: 6px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Portofolio Saya</h1>
+        <p>Tema Misterius & Cute</p>
+    </header>
+
+    <!-- FOTO & BIODATA -->
+    <section class="profile">
+        <img src="stupidthing.png" alt="Foto Kucing" style="
+    width:250px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(187,134,252,0.6);
+">
+
+        <div class="card">
+            <h2>Biodata</h2>
+            <p><strong>Nama:</strong> Nama Kamu</p>
+            <p><strong>TTL:</strong> Kota, Tanggal Lahir</p>
+            <p><strong>Alamat:</strong> Indonesia</p>
+            <p><strong>Email:</strong> email@example.com</p>
+        </div>
+    </section>
+
+    <!-- RIWAYAT SEKOLAH -->
+    <section class="card">
+        <h2>Riwayat Sekolah</h2>
+        <ul>
+            <li>SD Contoh (2010 - 2016)</li>
+            <li>SMP Contoh (2016 - 2019)</li>
+            <li>SMA / SMK Contoh (2019 - 2022)</li>
+        </ul>
+    </section>
+
+    <!-- KEMAMPUAN -->
+    <section class="card">
+        <h2>Kemampuan</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>UI Design</span>
+            <span>Editing</span>
+        </div>
+    </section>
+
+    <!-- TEMA FOTO -->
+    <section class="card">
+        <h2>Tema Portofolio</h2>
+        <p>
+            Portofolio ini terinspirasi dari foto kucing hitam-putih dengan ekspresi
+            santai dan misterius. Warna gelap melambangkan fokus dan ketenangan,
+            sementara ungu menunjukkan kreativitas dan keunikan.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 • Portofolio Pribadi
+    </footer>
+
+</div>
+
+</body>
+</html>
